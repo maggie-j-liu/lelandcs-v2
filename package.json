@@ -11,6 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.2.5"
+    "@astrojs/image": "^0.7.0",
+    "@astrojs/tailwind": "^2.0.1",
+    "astro": "^1.2.5",
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.5.4",
+    "prettier-plugin-tailwindcss": "^0.1.13"
   }
 }

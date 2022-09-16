@@ -1,0 +1,30 @@
+---
+const { as: Tag } = Astro.props;
+const className = Astro.props.class || "";
+---
+
+<style>
+  .gradient {
+    @apply -mb-3 bg-gradient-to-r from-fuchsia to-blue bg-clip-text pb-3 text-transparent;
+  }
+</style>
+
+<div class={`relative max-w-max ${className}`}>
+  <Tag className={"z-10 relative"}><slot /></Tag>
+  {
+    [...Array(2)].map(() => (
+      <span
+        class="gradient absolute inset-0 select-none blur-sm"
+        aria-hidden={true}
+      >
+        <slot />
+      </span>
+    ))
+  }
+  <span
+    class="select-none absolute inset-0 gradient blur-md"
+    aria-hidden={true}
+  >
+    <slot />
+  </span>
+</div>

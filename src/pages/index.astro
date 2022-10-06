@@ -1,7 +1,6 @@
 ---
 import Glow from "../components/Glow.astro";
-import club from "../assets/club.jpg";
-import { Image } from "@astrojs/image/components";
+import "../styles/style.css";
 ---
 
 <html lang="en">
@@ -13,43 +12,48 @@ import { Image } from "@astrojs/image/components";
     <title>Leland Computer Science Club</title>
     <meta
       name="description"
-      content="Learn. Code. Share. Join Leland Computer Science Club today!"
+      content="Build a game. Get a free console. Pitch to win $100. Join Leland Computer Science Club today!"
     />
     <meta
       property="og:description"
-      content="Learn. Code. Share. Join Leland Computer Science Club today!"
+      content="Build a game. Get a free console. Pitch to win $100. Join Leland Computer Science Club today!"
     />
   </head>
-  <body class="bg-black text-white">
-    <main class="py-16 px-4 text-lg sm:text-xl">
-      <div class="max-w-prose mx-auto">
-        <Glow as="h1" class="mx-auto text-center text-4xl font-bold">
-          Leland Computer Science Club
-        </Glow>
-        <div
-          class="text-center rounded-full mt-4 px-4 py-1 text-fuchsia-100 bg-fuchsia-900/40 w-fit mx-auto"
+  <body class="bg-gray-900 text-white">
+    <main class="py-20 px-4">
+      <div class="text-center">
+        <h1 class="text-6xl font-bold space-y-3">
+          <span class="block">Build a game.</span>
+          <span class="block">Get a free console.</span>
+          <span class="block"
+            >Pitch to win <Glow as="span" class="inline-block">$100</Glow
+            >.</span
+          >
+        </h1>
+        <p class="text-3xl font-medium max-w-2xl mx-auto mt-6">
+          Learn to code at Leland's Computer Science Club -- no experience
+          needed!
+        </p>
+      </div>
+      <div
+        class="mt-6 flex items-center justify-center gap-6 font-bold text-3xl"
+      >
+        <a
+          href="https://forms.gle/4KWCU2ZWxyhF5qvZ8"
+          class="rounded-xl px-10 py-3.5 bg-gradient-to-r hover:scale-105 duration-300 hover:duration-150 from-fuchsia-100 to-blue-100 text-gray-900"
+          >Register</a
         >
-          Wednesdays 3:30 - 4:30 @ E-8
-        </div>
-        <Image
-          class="mx-auto mt-8 rounded-lg"
-          src={club}
-          alt="Students coding at a CS Club meeting"
-          width={600}
-          aspectRatio={16 / 9}
-        />
-        <div class="relative w-fit mx-auto mt-8">
-          <a
-            href="https://forms.gle/4MGuPBgWut4k1HiA6"
-            class="text-black bg-white px-4 py-2 font-mono rounded-lg hover:scale-110 block duration-300 hover:duration-150"
-            >Interest Form</a
-          >
-
-          <div
-            class={"absolute z-[-10] -top-1 -bottom-1 -left-2 -right-2 blur-md bg-gradient-to-r from-fuchsia to-blue backdrop-blur-3xl"}
-          >
-          </div>
-        </div>
+        <a
+          href="https://discord.gg/bVxW6B9yDt"
+          class="hover:bg-[#5865F2] duration-300 hover:duration-150 hover:scale-105 rounded-xl px-10 py-3.5 outline-[#5865F2] outline outline-4 outline-offset-[-4px]"
+          >Discord</a
+        >
+      </div>
+      <div class="absolute bottom-4 left-6 text-3xl font-medium text-gray-400">
+        Leland CS Club
+      </div>
+      <div class="absolute bottom-4 right-6 text-3xl font-medium text-gray-400">
+        Wednesdays 3:30 - 4:30 @ E-8
       </div>
     </main>
   </body>

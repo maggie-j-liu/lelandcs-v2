@@ -6,6 +6,7 @@ import club from "../assets/club.jpg";
 import coding from "../assets/coding.jpg";
 import presentations from "../assets/presentations.jpg";
 import swag from "../assets/swag.jpg";
+import Photo from "../components/Photo.astro";
 ---
 
 <html lang="en">
@@ -55,42 +56,19 @@ import swag from "../assets/swag.jpg";
         >
       </div>
       <div class="flex justify-center">
-        <div class="rounded-lg bg-fuchsia-200 -rotate-6 min-w-[400px] w-1/4">
-          <Image
-            src={club}
-            alt="Students coding at a CS Club meeting"
-            width={800}
-            aspectRatio={16 / 9}
-            class="w-full rounded-lg grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
-          />
-        </div>
-        <div class="rounded-lg bg-fuchsia-200 rotate-6 min-w-[400px] w-1/4">
-          <Image
-            src={coding}
-            alt="Leland Hacks attendees working on their projects"
-            width={800}
-            aspectRatio={16 / 9}
-            class="w-full rounded-lg grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
-          />
-        </div>
-        <div class="rounded-lg bg-fuchsia-200 -rotate-6 min-w-[400px] w-1/4">
-          <Image
-            src={presentations}
-            alt="Students watching presentations at Leland Hacks"
-            width={800}
-            aspectRatio={16 / 9}
-            class="w-full rounded-lg grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
-          />
-        </div>
-        <div class="rounded-lg bg-fuchsia-200 rotate-6 min-w-[400px] w-1/4">
-          <Image
-            src={swag}
-            alt="Attendees grabbing swag from the Leland Hacks swag table"
-            width={800}
-            aspectRatio={16 / 9}
-            class="w-full rounded-lg grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
-          />
-        </div>
+        <Photo src={club} alt="Students coding at a CS Club meeting" />
+        <Photo
+          src={coding}
+          alt="Leland Hacks attendees working on their projects"
+        />
+        <Photo
+          src={presentations}
+          alt="Students watching presentations at Leland Hacks"
+        />
+        <Photo
+          src={swag}
+          alt="Attendees grabbing swag from the Leland Hacks swag table"
+        />
       </div>
       <div class="absolute bottom-4 left-6 text-3xl font-medium text-gray-200">
         Leland CS Club

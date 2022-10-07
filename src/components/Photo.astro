@@ -1,0 +1,16 @@
+---
+import { Image } from "@astrojs/image/components";
+const { src, alt } = Astro.props;
+---
+
+<div
+  class="rounded-lg bg-fuchsia-200 odd:-rotate-6 even:rotate-6 min-w-[400px] w-1/4"
+>
+  <Image
+    src={src}
+    alt={alt}
+    width={800}
+    aspectRatio={16 / 9}
+    class="w-full rounded-lg grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
+  />
+</div>

@@ -1,6 +1,11 @@
 ---
+import { Image } from "@astrojs/image/components";
 import Glow from "../components/Glow.astro";
 import "../styles/style.css";
+import club from "../assets/club.jpg";
+import coding from "../assets/coding.jpg";
+import presentations from "../assets/presentations.jpg";
+import swag from "../assets/swag.jpg";
 ---
 
 <html lang="en">
@@ -20,7 +25,7 @@ import "../styles/style.css";
     />
   </head>
   <body class="bg-gray-900 text-white">
-    <main class="py-20 px-4">
+    <main class="py-20 px-4 overflow-x-hidden">
       <div class="text-center">
         <h1 class="text-6xl font-bold space-y-3">
           <span class="block">Build a game.</span>
@@ -30,13 +35,13 @@ import "../styles/style.css";
             >.</span
           >
         </h1>
-        <p class="text-3xl font-medium max-w-2xl mx-auto mt-6">
+        <p class="text-3xl font-medium max-w-2xl mx-auto mt-8">
           Learn to code at Leland's Computer Science Club -- no experience
           needed!
         </p>
       </div>
       <div
-        class="mt-6 flex items-center justify-center gap-6 font-bold text-3xl"
+        class="relative z-10 mt-8 flex items-center justify-center gap-6 font-bold text-3xl"
       >
         <a
           href="https://forms.gle/4KWCU2ZWxyhF5qvZ8"
@@ -49,10 +54,48 @@ import "../styles/style.css";
           >Discord</a
         >
       </div>
-      <div class="absolute bottom-4 left-6 text-3xl font-medium text-gray-400">
+      <div class="flex justify-center">
+        <div class="rounded-lg bg-fuchsia-200 -rotate-6 min-w-[400px] w-1/4">
+          <Image
+            src={club}
+            alt="Students coding at a CS Club meeting"
+            width={800}
+            aspectRatio={16 / 9}
+            class="w-full rounded-lg grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
+          />
+        </div>
+        <div class="rounded-lg bg-fuchsia-200 rotate-6 min-w-[400px] w-1/4">
+          <Image
+            src={coding}
+            alt="Leland Hacks attendees working on their projects"
+            width={800}
+            aspectRatio={16 / 9}
+            class="w-full rounded-lg grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
+          />
+        </div>
+        <div class="rounded-lg bg-fuchsia-200 -rotate-6 min-w-[400px] w-1/4">
+          <Image
+            src={presentations}
+            alt="Students watching presentations at Leland Hacks"
+            width={800}
+            aspectRatio={16 / 9}
+            class="w-full rounded-lg grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
+          />
+        </div>
+        <div class="rounded-lg bg-fuchsia-200 rotate-6 min-w-[400px] w-1/4">
+          <Image
+            src={swag}
+            alt="Attendees grabbing swag from the Leland Hacks swag table"
+            width={800}
+            aspectRatio={16 / 9}
+            class="w-full rounded-lg grayscale mix-blend-multiply hover:grayscale-0 hover:mix-blend-normal"
+          />
+        </div>
+      </div>
+      <div class="absolute bottom-4 left-6 text-3xl font-medium text-gray-200">
         Leland CS Club
       </div>
-      <div class="absolute bottom-4 right-6 text-3xl font-medium text-gray-400">
+      <div class="absolute bottom-4 right-6 text-3xl font-medium text-gray-200">
         Wednesdays 3:30 - 4:30 @ E-8
       </div>
     </main>

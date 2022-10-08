@@ -26,9 +26,11 @@ import Photo from "../components/Photo.astro";
     />
   </head>
   <body class="bg-gray-900 text-white">
-    <main class="py-20 px-4 overflow-x-hidden">
+    <main class="py-12 sm:py-20 px-4 overflow-x-hidden">
       <div class="text-center">
-        <h1 class="text-6xl font-bold space-y-3">
+        <h1
+          class="text-4xl leading-none sm:text-6xl font-bold space-y-4 sm:space-y-3"
+        >
           <span class="block">Build a game.</span>
           <span class="block">Get a free console.</span>
           <span class="block"
@@ -36,45 +38,54 @@ import Photo from "../components/Photo.astro";
             >.</span
           >
         </h1>
-        <p class="text-3xl font-medium max-w-2xl mx-auto mt-8">
+        <p class="text-xl sm:text-3xl font-medium max-w-2xl mx-auto mt-8">
           Learn to code at Leland's Computer Science Club -- no experience
           needed!
         </p>
       </div>
       <div
-        class="relative z-10 mt-8 flex items-center justify-center gap-6 font-bold text-3xl"
+        class="relative z-10 mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 sm:gap-6 font-bold text-xl sm:text-3xl text-center"
       >
         <a
           href="https://forms.gle/4KWCU2ZWxyhF5qvZ8"
-          class="rounded-xl px-10 py-3.5 bg-gradient-to-r hover:scale-105 duration-300 hover:duration-150 from-fuchsia-100 to-blue-100 text-gray-900"
+          class="rounded-xl px-10 py-3 sm:py-3.5 bg-gradient-to-r hover:scale-105 duration-300 hover:duration-150 from-fuchsia-100 to-blue-100 text-gray-900"
           >Register</a
         >
         <a
           href="https://discord.gg/bVxW6B9yDt"
-          class="hover:bg-[#5865F2] duration-300 hover:duration-150 hover:scale-105 rounded-xl px-10 py-3.5 outline-[#5865F2] outline outline-4 outline-offset-[-4px]"
+          class="bg-gray-900 hover:bg-[#5865F2] duration-300 hover:duration-150 hover:scale-105 rounded-xl px-10 py-3 sm:py-3.5 outline-[#5865F2] outline outline-2 sm:outline-4 outline-offset-[-4px]"
           >Discord</a
         >
       </div>
-      <div class="flex justify-center">
+      <div class="flex flex-col sm:flex-row items-center justify-center">
         <Photo src={club} alt="Students coding at a CS Club meeting" />
         <Photo
           src={coding}
           alt="Leland Hacks attendees working on their projects"
+          class="hidden sm:block"
         />
         <Photo
           src={presentations}
           alt="Students watching presentations at Leland Hacks"
+          class="hidden sm:block"
         />
         <Photo
           src={swag}
           alt="Attendees grabbing swag from the Leland Hacks swag table"
+          class="hidden sm:block"
         />
       </div>
-      <div class="absolute bottom-4 left-6 text-3xl font-medium text-gray-200">
+      <div
+        class="hidden sm:block absolute bottom-4 left-6 text-3xl font-medium text-gray-200"
+      >
         Leland CS Club
       </div>
-      <div class="absolute bottom-4 right-6 text-3xl font-medium text-gray-200">
-        Wednesdays 3:30 - 4:30 @ E-8
+      <div
+        class="z-10 absolute left-0 right-0 text-center bottom-4 sm:left-auto sm:right-6 text-2xl sm:text-3xl font-medium text-gray-200"
+      >
+        <span class="md:hidden">Wed</span><span class="hidden md:inline"
+          >Wednesdays</span
+        > 3:30 - 4:30 @ E-8
       </div>
     </main>
   </body>

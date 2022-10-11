@@ -7,6 +7,7 @@ import coding from "../assets/coding.jpg";
 import presentations from "../assets/presentations.jpg";
 import swag from "../assets/swag.jpg";
 import Photo from "../components/Photo.astro";
+import FancyLink from "../components/FancyLink.astro";
 ---
 
 <html lang="en">
@@ -43,6 +44,9 @@ import Photo from "../components/Photo.astro";
           Learn to code at Leland's Computer Science Club -- no experience
           needed!
         </p>
+        <p class="mt-1 text-lg sm:text-2xl text-blue-300/70">
+          Wednesdays 3:30 - 4:30 @ E-8
+        </p>
       </div>
       <div
         class="relative z-10 mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 sm:gap-6 font-bold text-xl sm:text-3xl text-center"
@@ -54,7 +58,7 @@ import Photo from "../components/Photo.astro";
         >
         <a
           href="https://discord.gg/bVxW6B9yDt"
-          class="bg-gray-900 hover:bg-[#5865F2] duration-300 hover:duration-150 hover:scale-105 rounded-xl px-10 py-3 sm:py-3.5 outline-[#5865F2] outline outline-2 sm:outline-4 outline-offset-[-4px]"
+          class="bg-gray-900 focus:bg-[#5865F2] hover:bg-[#5865F2] duration-300 hover:duration-150 hover:scale-105 rounded-xl px-10 py-3 sm:py-3.5 outline-[#5865F2] outline outline-2 sm:outline-4 outline-offset-[-4px]"
           >Discord</a
         >
       </div>
@@ -76,17 +80,34 @@ import Photo from "../components/Photo.astro";
           class="hidden sm:block"
         />
       </div>
-      <div
-        class="hidden sm:block fixed bottom-4 left-6 text-3xl font-medium text-gray-200"
-      >
-        Leland CS Club
-      </div>
-      <div
-        class="z-10 fixed left-0 right-0 text-center bottom-4 sm:left-auto sm:right-6 text-2xl sm:text-3xl font-medium text-gray-200"
-      >
-        <span class="md:hidden">Wed</span><span class="hidden md:inline"
-          >Wednesdays</span
-        > 3:30 - 4:30 @ E-8
+      <div class="max-w-prose mx-auto mt-12 text-xl">
+        <h2
+          class="text-3xl leading-none mb-2 font-semibold gradient-border border-b-4 w-max"
+        >
+          So... what exactly is this?
+        </h2>
+        <div class="space-y-6">
+          <p>
+            First semester, you'll learn to code through building your own game
+            with <FancyLink href="https://sprig.hackclub.com">Sprig</FancyLink>,
+            a game console and development platform created by <FancyLink
+              href="https://hackclub.com">Hack Club</FancyLink
+            >! Once you make a game, you'll be sent a real, physical console to
+            play your game on.
+          </p>
+          <p>
+            And if all that isn't cool enough... you'll also have a chance to
+            demo and pitch your game to the club -- we'll have a grand prize of
+            $100, and a bunch of smaller prizes as well.
+          </p>
+          <p>
+            We'll have boba 🧋 and tons of stickers as well! So make sure to <FancyLink
+              href="https://forms.gle/4KWCU2ZWxyhF5qvZ8">register</FancyLink
+            > and join the <FancyLink href="https://discord.gg/bVxW6B9yDt"
+              >Discord</FancyLink
+            > :D
+          </p>
+        </div>
       </div>
     </main>
   </body>

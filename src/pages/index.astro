@@ -80,9 +80,9 @@ import FancyLink from "../components/FancyLink.astro";
           class="hidden sm:block"
         />
       </div>
-      <div class="max-w-prose mx-auto mt-12 text-xl">
+      <div class="max-w-prose mx-auto mt-12 sm:text-xl">
         <h2
-          class="text-3xl leading-none mb-2 font-semibold gradient-border border-b-4 w-max"
+          class="text-2xl sm:text-3xl leading-none mb-2 font-semibold gradient-border border-b-4 w-fit"
         >
           So... what exactly is this?
         </h2>
@@ -107,8 +107,19 @@ import FancyLink from "../components/FancyLink.astro";
               >Discord</FancyLink
             > :D
           </p>
+
+          <p>
+            Email us at <FancyLink href="mailto:lelandcomputerscience@gmail.com"
+              >lelandcomputerscience@gmail.com</FancyLink
+            > if you have any questions!
+          </p>
         </div>
       </div>
     </main>
+    <script async defer>
+      console.log(
+        "Hey hacker!\n\nIf you're here, you probably fit right in at our club :D. Sign up for the club, then send us an email with a screenshot of this message. If you're the first, you'll get a t-shirt!"
+      );
+    </script>
   </body>
 </html>

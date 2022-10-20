@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/register",
+      "destination": "https://forms.gle/4KWCU2ZWxyhF5qvZ8",
+      "permanent": false
+    },
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/bVxW6B9yDt",
+      "permanent": false
+    }
+  ]
+}

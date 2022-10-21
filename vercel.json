@@ -9,6 +9,11 @@
       "source": "/discord",
       "destination": "https://discord.gg/bVxW6B9yDt",
       "permanent": false
+    },
+    {
+      "source": "/first-meeting",
+      "destination": "https://organize.mlh.io/participants/events/8629-leland-cs-club-sprig-jam",
+      "permanent": false
     }
   ]
 }

@@ -14,6 +14,11 @@
       "source": "/first-meeting",
       "destination": "https://organize.mlh.io/participants/events/8629-leland-cs-club-sprig-jam",
       "permanent": false
+    },
+    {
+      "source": "/attendance",
+      "destination": "https://docs.google.com/forms/d/e/1FAIpQLSf8WspuQ0CXNOpxxsu8yimJ9LwT9QDNVEzkUiuv94i7n1dEmA/viewform?usp=sf_link",
+      "permanent": false
     }
   ]
 }

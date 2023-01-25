@@ -17,7 +17,7 @@
     },
     {
       "source": "/attendance",
-      "destination": "https://docs.google.com/forms/d/e/1FAIpQLSf8WspuQ0CXNOpxxsu8yimJ9LwT9QDNVEzkUiuv94i7n1dEmA/viewform?usp=sf_link",
+      "destination": "https://docs.google.com/forms/d/e/1FAIpQLSf8WspuQ0CXNOpxxsu8yimJ9LwT9QDNVEzkUiuv94i7n1dEmA/viewform",
       "permanent": false
     }
   ]

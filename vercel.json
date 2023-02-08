@@ -24,6 +24,11 @@
       "source": "/officer-app",
       "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdh92FbxA0WekmYoiLHACso_dDaLDqMau-74-WtOzoQW-I0QQ/viewform",
       "permanent": false
+    },
+    {
+      "source": "/bingo",
+      "destination": "https://docs.google.com/document/d/1T97cr8Fjeta5H2l6uyjsUhD-hxE8oe7QPJCWrAwM-FU/edit",
+      "permanent": false
     }
   ]
 }

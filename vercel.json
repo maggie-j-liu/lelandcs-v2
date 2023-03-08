@@ -29,6 +29,11 @@
       "source": "/bingo",
       "destination": "https://docs.google.com/document/d/1T97cr8Fjeta5H2l6uyjsUhD-hxE8oe7QPJCWrAwM-FU/edit",
       "permanent": false
+    },
+    {
+      "source": "/hackathon",
+      "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeOviNsEWTBbuQ0cioRL2YwR1BGBRKzZ7ENOaCb011YvHX9Jg/viewform",
+      "permanent": false
     }
   ]
 }
